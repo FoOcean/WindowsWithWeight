@@ -151,7 +151,7 @@ Fluent UI System Icons SVGs in `Assets\fluent`.
 
 ## License
 
-MIT, see [LICENSE](LICENSE).
+Copyright (c) 2026 FoOcean. Licensed under the GNU General Public License v3.0, see [LICENSE](LICENSE).
 
 Icons are from [Fluent UI System Icons](https://github.com/microsoft/fluentui-system-icons) by Microsoft,
 used under the MIT License ([Assets/fluent/LICENSE](Assets/fluent/LICENSE)).
