@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <AssemblyName>WindowsWithWeight</AssemblyName>
+    <RootNamespace>WindowsWithWeight</RootNamespace>
+    <Product>Windows with Weight</Product>
+    <Version>1.0.0</Version>
+    <ApplicationIcon>Assets\app.ico</ApplicationIcon>
+    <!-- Per-Monitor V2 DPI awareness is declared in app.manifest (process-wide, before any code runs)
+         and mirrored here so WinForms' own initialisation agrees with it. -->
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationHighDpiMode>PerMonitorV2</ApplicationHighDpiMode>
+    <ApplicationVisualStyles>true</ApplicationVisualStyles>
+    <!-- WFO0003 asks to declare DPI only via the project property; we intentionally keep the manifest too. -->
+    <NoWarn>$(NoWarn);WFO0003;CA1416</NoWarn>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\*.png" LogicalName="Assets.%(Filename)%(Extension)" />
+  </ItemGroup>
+
+</Project>
